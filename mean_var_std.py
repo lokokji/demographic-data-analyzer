@@ -8,7 +8,7 @@ def calculate(numbers):
     # Mengonversi list menjadi matriks 3x3
     matrix = np.array(numbers).reshape(3, 3)
     
-    # Menghitung statistik
+    # Menghitung statistikfrom mean_var_std import calculate
     mean = [matrix.mean(axis=0).tolist(), matrix.mean(axis=1).tolist(), matrix.mean().tolist()]
     variance = [matrix.var(axis=0).tolist(), matrix.var(axis=1).tolist(), matrix.var().tolist()]
     std_dev = [matrix.std(axis=0).tolist(), matrix.std(axis=1).tolist(), matrix.std().tolist()]
